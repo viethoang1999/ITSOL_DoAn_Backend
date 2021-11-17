@@ -1,10 +1,10 @@
-package com.example.recruitmentwebsitesystem;
+package com.example.recuitmentwebsitesystem;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RecruitmentWebsiteSystemApplicationTests {
+class RecuitmentWebsiteSystemApplicationTests {
 
     @Test
     void contextLoads() {
