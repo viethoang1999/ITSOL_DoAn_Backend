@@ -4,5 +4,6 @@ import com.example.recruitmentwebsitesystem.entity.ProfileStatus;
 import com.example.recruitmentwebsitesystem.entity.ResetCode;
 import org.springframework.stereotype.Repository;
 
+@Repository
 public interface ResetCodeRepo extends BaseRepo<ResetCode, Integer> {
 }

@@ -5,13 +5,11 @@ import com.example.recruitmentwebsitesystem.dto.Metadata;
 import com.example.recruitmentwebsitesystem.dto.ResponseDTO;
 import com.example.recruitmentwebsitesystem.generic.BaseService;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-//import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.stereotype.Controller;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
@@ -110,7 +108,7 @@ public class GenericController <T , E> {
 
     @PutMapping("")
     @ResponseBody
-//    @PreAuthorize(value="isAuthenticated()")
+    @PreAuthorize(value="isAuthenticated()")
     public ResponseEntity<ResponseDTO<T>> update(@Valid @RequestBody T obj, BindingResult result) {
         ResponseDTO<T> responseDTO = new ResponseDTO<>();
         if(result.hasErrors()) {

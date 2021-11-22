@@ -35,4 +35,5 @@ public class Role implements Serializable {
 
     @Column(name = "is_delete", nullable = false)
     boolean isDelete;
+    private ERole role;
 }

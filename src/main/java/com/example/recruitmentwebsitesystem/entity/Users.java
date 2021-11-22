@@ -10,6 +10,8 @@ import org.springframework.stereotype.Component;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 @Data
 @AllArgsConstructor
@@ -56,11 +58,16 @@ public class Users implements Serializable {
     String avatar;
 
     @Column(name = "role_id", nullable = false)
-    int roleId;
+    Integer roleId;
 
     @Column(name = "user_status", nullable = false)
-    String userStatus;
+    Integer userStatus;
 
     @Column(name = "is_delete", nullable = false)
     boolean isDelete;
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "authority",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id"))
+    private Set<Role> roles=new HashSet<>();
 }
