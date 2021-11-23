@@ -16,7 +16,7 @@ public interface BaseService<T,ID> {
 
     void delete(ID key);
 
-    boolean existsById(ID key);
+//    boolean existsById(ID key);
 
     Long count();
 }

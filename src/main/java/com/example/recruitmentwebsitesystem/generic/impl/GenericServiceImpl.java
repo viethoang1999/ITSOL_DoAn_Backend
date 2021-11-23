@@ -55,9 +55,9 @@ public class GenericServiceImpl <T,ID>  implements BaseService<T,ID> {
         return jpaRepository.count();
     }
 
-    @Override
-    public boolean existsById(ID key) {
-        return jpaRepository.existsById(key);
-    }
+//    @Override
+//    public boolean existsById(ID key) {
+//        return jpaRepository.existsById(key);
+//    }
 
 }

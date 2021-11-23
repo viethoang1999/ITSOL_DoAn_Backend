@@ -1,8 +1,9 @@
 package com.example.recruitmentwebsitesystem.repo;
 
 import com.example.recruitmentwebsitesystem.entity.Jobs;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface JobsRepo extends BaseRepo<Jobs, Integer> {
+public interface JobsRepo extends JpaRepository<Jobs, Integer> {
 }

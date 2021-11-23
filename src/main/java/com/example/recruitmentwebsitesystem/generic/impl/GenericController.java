@@ -33,9 +33,7 @@ public class GenericController <T , E> {
 
             @RequestParam(value = "p", defaultValue = "0") int page,
             @RequestParam(value = "s", defaultValue = "10") int size,
-            @RequestParam(value = "fields", required = false) Set<String> fields,
-            @RequestParam(value = "name",required = false) String name,
-            @RequestParam(value = "categoryId",required = false) Integer categoryId
+            @RequestParam(value = "fields", required = false) Set<String> fields
 
     )
 
@@ -58,7 +56,7 @@ public class GenericController <T , E> {
 
 
         //fill data
-        mapList=mapList.stream().filter(e -> e.get("name").toString().contains(name) == true).collect(Collectors.toList());
+
 
 
 
