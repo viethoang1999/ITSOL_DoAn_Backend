@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
-import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -30,6 +29,10 @@ public class Users implements Serializable {
     @JoinColumn(name = "profiles_id", nullable = false)
     Profiles profiles;
 
+    @OneToOne(targetEntity = JobsRegister.class, fetch = FetchType.LAZY)
+    @JoinColumn(name = "job_register_id", nullable = false)
+    JobsRegister jobsRegister;
+
     @Column(name = "full_name", nullable = false)
     String fullName;
 
@@ -42,32 +45,24 @@ public class Users implements Serializable {
     @Column(name = "password", nullable = false)
     String passWord;
 
-    @Column(name = "phone", nullable = false)
-    String phone;
+    @Column(name = "phone_number", nullable = false)
+    String phone_number;
 
-    @Column(name = "homeTown", nullable = false)
+    @Column(name = "home_town", nullable = false)
     String homeTown;
 
     @Column(name = "gender", nullable = false)
     String gender;
 
-    @Column(name = "birthday", nullable = false)
+    @Column(name = "birth_day", nullable = false)
     Date birthday;
 
     @Column(name = "avatar", nullable = false)
     String avatar;
-
-    @Column(name = "role_id", nullable = false)
-    Integer roleId;
 
     @Column(name = "user_status", nullable = false)
     Integer userStatus;
 
     @Column(name = "is_delete", nullable = false)
     boolean isDelete;
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "authority",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "role_id"))
-    private Set<Role> roles=new HashSet<>();
 }

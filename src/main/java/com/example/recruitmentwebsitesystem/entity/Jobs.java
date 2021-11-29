@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
-import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -19,10 +18,26 @@ import java.util.Date;
 @Table(name = "jobs")
 public class Jobs implements Serializable {
     @Id
-    @Column(name = "job_id", nullable = false)
+    @Column(nullable = false)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "JOBS_SEQ")
     @SequenceGenerator(name = "JOBS_SEQ", sequenceName = "JOBS_SEQ", allocationSize = 1, initialValue = 1)
     int id;
+
+    @ManyToOne(targetEntity = JobStatus.class, fetch = FetchType.LAZY)
+    @JoinColumn(name = "job_status_id", nullable = false)
+    JobStatus jobStatus;
+
+    @OneToOne(targetEntity = AcademicLevel.class, fetch = FetchType.LAZY)
+    @JoinColumn(name = "academic_level_id", nullable = false)
+    AcademicLevel academicLevel;
+
+    @OneToOne(targetEntity = MethodWork.class, fetch = FetchType.LAZY)
+    @JoinColumn(name = "method_work_id", nullable = false)
+    MethodWork methodWork;
+
+    @OneToOne(targetEntity = LevelRank.class, fetch = FetchType.LAZY)
+    @JoinColumn(name = "level_rank_id", nullable = false)
+    LevelRank levelRank;
 
     @Column(name = "job_name", nullable = false)
     String jobName;
@@ -33,17 +48,8 @@ public class Jobs implements Serializable {
     @Column(name = "number_experience", nullable = false)
     String numberExperience;
 
-    @Column(name = "method_work_id", nullable = false)
-    int methodWorkId;
-
     @Column(name = "address_work", nullable = false)
     String addressWork;
-
-    @Column(name = "academic_level_id", nullable = false)
-    int academicLevelId;
-
-    @Column(name = "level_id", nullable = false)
-    int levelId;
 
     @Column(name = "quantity_person", nullable = false)
     int quantityPerson;
@@ -65,9 +71,6 @@ public class Jobs implements Serializable {
 
     @Column(name = "contact_id", nullable = false)
     int contactId;
-
-    @Column(name = "job_status_id", nullable = false)
-    int jobStatusId;
 
     @Column(name = "view", nullable = false)
     int view;

@@ -24,14 +24,15 @@ public class ResetCode implements Serializable {
     @SequenceGenerator(name = "RESET_CODE_SEQ", sequenceName = "RESET_CODE_SEQ", allocationSize = 1, initialValue = 1)
     int id;
 
+    @ManyToOne(targetEntity = Users.class, fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id", nullable = false)
+    Users users;
+
     @Column(name = "code", nullable = false)
     int code;
 
     @Column(name = "create_date", nullable = false)
     Date createDate;
-
-    @Column(name = "user_id", nullable = false)
-    int userId;
 
     @Column(name = "is_delete", nullable = false)
     boolean isDelete;

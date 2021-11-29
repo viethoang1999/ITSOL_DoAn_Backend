@@ -19,7 +19,7 @@ import java.io.Serializable;
 @Table(name = "role")
 public class Role implements Serializable {
     @Id
-    @Column(name = "role_id", nullable = false)
+    @Column(nullable = false)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ROLE_SEQ")
     @SequenceGenerator(name = "ROLE_SEQ", sequenceName = "ROLE_SEQ", allocationSize = 1, initialValue = 1)
     int id;
@@ -27,13 +27,10 @@ public class Role implements Serializable {
     @Column(name = "role_code", nullable = false)
     String roleCode;
 
-    @Column(name = "role_name", nullable = false)
-    String roleName;
-
     @Column(name = "description", nullable = false)
     String description;
 
     @Column(name = "is_delete", nullable = false)
     boolean isDelete;
-    private ERole role;
+
 }

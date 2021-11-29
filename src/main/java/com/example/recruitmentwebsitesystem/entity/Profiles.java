@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
-import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -27,14 +26,15 @@ public class Profiles implements Serializable {
     @JoinColumn(name = "user_id", nullable = false)
     Users users;
 
+    @OneToOne(targetEntity = AcademicLevel.class, fetch = FetchType.LAZY)
+    @JoinColumn(name = "academic_level_id", nullable = false)
+    AcademicLevel academicLevel;
+
     @Column(name = "skill", nullable = false)
     String skill;
 
     @Column(name = "number_years_experience", nullable = false)
     int numberYearsExperience;
-
-    @Column(name = "academic_name", nullable = false)
-    String academicName;
 
     @Column(name = "desired_salary", nullable = false)
     int desiredSalary;

@@ -18,23 +18,22 @@ import java.util.Date;
 @Entity
 @Table(name = "jobs_register")
 public class JobsRegister implements Serializable {
-//    @Id
-//    @ManyToOne(targetEntity = Jobs.class, fetch = FetchType.LAZY)
-//    @JoinColumn(name = "job_id", nullable = false)
-//    Jobs jobs;
-//
-//    @Id
-//    @ManyToOne(targetEntity = Users.class, fetch = FetchType.LAZY)
-//    @JoinColumn(name = "job_id", nullable = false)
-//    Users users;
-    @EmbeddedId
-    CompositeJobsReg compositeJobsReg;
+    @Id
+    @Column(nullable = false)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "JOBS_REGISTER_SEQ")
+    @SequenceGenerator(name = "JOBS_REGISTER_SEQ", sequenceName = "JOBS_REGISTER_SEQ", allocationSize = 1, initialValue = 1)
+    int id;
+
+    @OneToOne(targetEntity = Users.class, fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id", nullable = false)
+    int user_id;
+
+    @ManyToOne(targetEntity = ProfileStatus.class, fetch = FetchType.LAZY)
+    @JoinColumn(name = "profile_status_id", nullable = false)
+    ProfileStatus profileStatus;
 
     @Column(name = "date_register", nullable = false)
     Date dateRegister;
-
-    @Column(name = "profile_status_id", nullable = false)
-    int profileStatusId;
 
     @Column(name = "date_interview", nullable = false)
     Date dateInterview;

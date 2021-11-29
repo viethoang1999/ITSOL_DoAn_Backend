@@ -5,8 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -23,6 +21,14 @@ public class AcademicLevel implements Serializable {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ACADEMIC_LEVEL_SEQ")
     @SequenceGenerator(name = "ACADEMIC_LEVEL_SEQ", sequenceName = "ACADEMIC_LEVEL_SEQ", allocationSize = 1, initialValue = 1)
     int id;
+
+    @OneToOne(targetEntity = Jobs.class, fetch = FetchType.LAZY)
+    @JoinColumn(name = "jobs_id", nullable = false)
+    Jobs jobs;
+
+    @OneToOne(targetEntity = Profiles.class, fetch = FetchType.LAZY)
+    @JoinColumn(name = "profile_id", nullable = false)
+    Profiles profiles;
 
     @Column(name = "academic_name", nullable = false)
     String academicName;

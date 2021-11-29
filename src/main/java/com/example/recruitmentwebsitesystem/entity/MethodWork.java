@@ -23,6 +23,10 @@ public class MethodWork implements Serializable {
     @SequenceGenerator(name = "METHOD_WORK_SEQ", sequenceName = "METHOD_WORK_SEQ", allocationSize = 1, initialValue = 1)
     int id;
 
+    @OneToOne(targetEntity = Jobs.class, fetch = FetchType.LAZY)
+    @JoinColumn(name = "jobs_id", nullable = false)
+    Jobs jobs;
+
     @Column(name = "method_name", nullable = false)
     String methodName;
 

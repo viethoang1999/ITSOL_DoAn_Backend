@@ -24,6 +24,10 @@ public class Notifications implements Serializable {
     @SequenceGenerator(name = "NOTIFICATIONS_SEQ", sequenceName = "NOTIFICATIONS_SEQ", allocationSize = 1, initialValue = 1)
     int id;
 
+    @OneToOne(targetEntity = Types.class, fetch = FetchType.LAZY)
+    @JoinColumn(name = "types_id", nullable = false)
+    Types types;
+
     @Column(name = "sender_id", nullable = false)
     int senderId;
 
@@ -38,9 +42,6 @@ public class Notifications implements Serializable {
 
     @Column(name = "res_id", nullable = false)
     int resId;
-
-    @Column(name = "type_id", nullable = false)
-    int typeId;
 
     @Column(name = "is_delete", nullable = false)
     boolean isDelete;

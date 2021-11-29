@@ -57,7 +57,7 @@ public class Company implements Serializable {
     @Column(name = "description", nullable = false)
     String description;
 
-    @Column(name = "avarta", nullable = false)
+    @Column(name = "avatar", nullable = false)
     String avatar;
 
     @Column(name = "backdrop_img", nullable = false)
