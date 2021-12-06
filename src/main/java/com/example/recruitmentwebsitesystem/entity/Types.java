@@ -23,8 +23,7 @@ public class Types implements Serializable {
     @SequenceGenerator(name = "TYPES_SEQ", sequenceName = "TYPES_SEQ", allocationSize = 1, initialValue = 1)
     int id;
 
-    @OneToOne(targetEntity = Notifications.class, fetch = FetchType.LAZY)
-    @JoinColumn(name = "notifications_id", nullable = false)
+    @OneToOne(mappedBy = "types", fetch = FetchType.EAGER)
     Notifications notifications;
 
     @Column(name = "name", nullable = false)

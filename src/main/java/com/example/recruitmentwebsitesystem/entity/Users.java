@@ -25,12 +25,10 @@ public class Users implements Serializable {
     @SequenceGenerator(name = "USERS_SEQ", sequenceName = "USERS_SEQ", allocationSize = 1, initialValue = 1)
     int id;
 
-    @OneToOne(targetEntity = Profiles.class, fetch = FetchType.LAZY)
-    @JoinColumn(name = "profiles_id", nullable = false)
+    @OneToOne(mappedBy = "users", fetch = FetchType.EAGER)
     Profiles profiles;
 
-    @OneToOne(targetEntity = JobsRegister.class, fetch = FetchType.LAZY)
-    @JoinColumn(name = "job_register_id", nullable = false)
+    @OneToOne(mappedBy = "users", fetch = FetchType.EAGER)
     JobsRegister jobsRegister;
 
     @Column(name = "full_name", nullable = false)

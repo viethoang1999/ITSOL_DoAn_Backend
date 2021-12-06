@@ -22,12 +22,10 @@ public class AcademicLevel implements Serializable {
     @SequenceGenerator(name = "ACADEMIC_LEVEL_SEQ", sequenceName = "ACADEMIC_LEVEL_SEQ", allocationSize = 1, initialValue = 1)
     int id;
 
-    @OneToOne(targetEntity = Jobs.class, fetch = FetchType.LAZY)
-    @JoinColumn(name = "jobs_id", nullable = false)
+    @OneToOne(mappedBy = "academicLevel", fetch = FetchType.EAGER)
     Jobs jobs;
 
-    @OneToOne(targetEntity = Profiles.class, fetch = FetchType.LAZY)
-    @JoinColumn(name = "profile_id", nullable = false)
+    @OneToOne(mappedBy = "academicLevel", fetch = FetchType.EAGER)
     Profiles profiles;
 
     @Column(name = "academic_name", nullable = false)
