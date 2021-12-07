@@ -1,10 +1,12 @@
 package com.example.recruitmentwebsitesystem.entity;
 
+import jdk.jfr.Timestamp;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
@@ -33,12 +35,14 @@ public class Company implements Serializable {
     @Column(name = "hot_line", nullable = false)
     String hotLine;
 
-    @Column(name = "date_incorporation", nullable = false)
+    @Temporal(TemporalType.DATE)
+    @Column(name = "date_incoporation", nullable = false)
     Date dateIncorporation;
 
     @Column(name = "tax_code", nullable = false)
     String taxCode;
 
+    @Temporal(TemporalType.DATE)
     @Column(name = "tax_date", nullable = false)
     Date taxDate;
 

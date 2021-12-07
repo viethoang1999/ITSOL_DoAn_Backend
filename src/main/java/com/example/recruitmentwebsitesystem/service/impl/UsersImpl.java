@@ -9,6 +9,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.Optional;
+
 @Service
 public class UsersImpl extends GenericServiceImpl<Users, Integer> implements UsersService {
 
@@ -18,6 +21,40 @@ public class UsersImpl extends GenericServiceImpl<Users, Integer> implements Use
 
     @Autowired
     UsersRepo userRepo;
+    @Autowired
+    private UsersRepo userRepository;
+    @Override
+    public List<Users> findAll() {
+        try {
+            return userRepository.findAll();
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+            return null;
+        }
+
+    }
+
+    @Override
+    public Users save(Users userEntity) {
+        return userRepository.save(userEntity);
+    }
+
+    @Override
+    public Users findByID(Integer id) {
+        try {
+            Optional<Users> optional = userRepository.findById(id);
+            if(optional.isPresent()) {
+                return optional.get();
+            }
+            return null;
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+            return null;
+        }
+
+    }
 
 //    @Override
 //    public Users findUserByEmail(String email) {

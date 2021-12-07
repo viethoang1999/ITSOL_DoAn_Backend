@@ -27,6 +27,10 @@ public class Profiles implements Serializable {
     Users users;
 
     @OneToOne(targetEntity = AcademicLevel.class, fetch = FetchType.LAZY)
+    @JoinColumn(name = "desire_id", nullable = false)
+    Desiredwork desiredwork;
+
+    @OneToOne(targetEntity = AcademicLevel.class, fetch = FetchType.LAZY)
     @JoinColumn(name = "academic_level_id", nullable = false)
     AcademicLevel academicLevel;
 

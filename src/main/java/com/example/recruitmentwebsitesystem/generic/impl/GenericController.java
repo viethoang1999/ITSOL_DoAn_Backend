@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
+
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
@@ -104,22 +104,22 @@ public class GenericController <T , E> {
         }
     }
 
-    @PutMapping("")
-    @ResponseBody
-    @PreAuthorize(value="isAuthenticated()")
-    public ResponseEntity<ResponseDTO<T>> update(@Valid @RequestBody T obj, BindingResult result) {
-        ResponseDTO<T> responseDTO = new ResponseDTO<>();
-        if(result.hasErrors()) {
-            ErrorMessage errorMessage = new ErrorMessage();
-            errorMessage.setUserMessage("Data is invalid!");
-            errorMessage.setInternalMessage(result.toString());
-            responseDTO.setErrorMessage(errorMessage);
-            return new ResponseEntity<>(responseDTO, HttpStatus.BAD_REQUEST);
-        }
-        else {
-            responseDTO.setData(this.baseService.update(obj));
-            return new ResponseEntity<>(responseDTO, HttpStatus.CREATED);
-        }
-    }
+//    @PutMapping("")
+//    @ResponseBody
+//    @PreAuthorize(value="isAuthenticated()")
+//    public ResponseEntity<ResponseDTO<T>> update(@Valid @RequestBody T obj, BindingResult result) {
+//        ResponseDTO<T> responseDTO = new ResponseDTO<>();
+//        if(result.hasErrors()) {
+//            ErrorMessage errorMessage = new ErrorMessage();
+//            errorMessage.setUserMessage("Data is invalid!");
+//            errorMessage.setInternalMessage(result.toString());
+//            responseDTO.setErrorMessage(errorMessage);
+//            return new ResponseEntity<>(responseDTO, HttpStatus.BAD_REQUEST);
+//        }
+//        else {
+//            responseDTO.setData(this.baseService.update(obj));
+//            return new ResponseEntity<>(responseDTO, HttpStatus.CREATED);
+//        }
+//    }
 
 }
