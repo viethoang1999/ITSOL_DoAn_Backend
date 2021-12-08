@@ -1,7 +1,9 @@
 package com.example.recruitmentwebsitesystem.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ResponseDTO<T> {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private Metadata metadata;

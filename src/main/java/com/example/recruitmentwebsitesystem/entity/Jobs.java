@@ -1,5 +1,7 @@
 package com.example.recruitmentwebsitesystem.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.sun.xml.txw2.annotation.XmlElement;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,6 +18,7 @@ import java.util.Date;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Entity
 @Table(name = "jobs")
+
 public class Jobs implements Serializable {
     @Id
     @Column(nullable = false)
@@ -24,20 +27,32 @@ public class Jobs implements Serializable {
     int id;
 
     @ManyToOne(targetEntity = JobStatus.class, fetch = FetchType.LAZY)
-    @JoinColumn(name = "job_status_id", nullable = false)
+    @JoinColumn(name = "job_status_id", nullable = false, referencedColumnName = "id")
+    @JsonIgnore
     JobStatus jobStatus;
-
-    @OneToOne(targetEntity = AcademicLevel.class, fetch = FetchType.LAZY)
-    @JoinColumn(name = "academic_level_id", nullable = false)
-    AcademicLevel academicLevel;
 
     @OneToOne(targetEntity = MethodWork.class, fetch = FetchType.LAZY)
     @JoinColumn(name = "method_work_id", nullable = false)
+    @JsonIgnore
     MethodWork methodWork;
+
+
+    @OneToOne(targetEntity = AcademicLevel.class, fetch = FetchType.LAZY)
+    @JoinColumn(name = "academic_level_id", nullable = false)
+    @JsonIgnore
+    AcademicLevel academicLevel;
+
 
     @OneToOne(targetEntity = LevelRank.class, fetch = FetchType.LAZY)
     @JoinColumn(name = "level_rank_id", nullable = false)
+    @JsonIgnore
     LevelRank levelRank;
+
+    @Column(name = "create_id", nullable = false)
+    int createId;
+
+    @Column(name = "contact_id", nullable = false)
+    int contactId;
 
     @Column(name = "job_name", nullable = false)
     String jobName;
@@ -63,21 +78,18 @@ public class Jobs implements Serializable {
     @Column(name = "description", nullable = false)
     String description;
 
-    @Column(name = "interest", nullable = false)
+    @Column(name = "interrest", nullable = false)
     String interest;
 
     @Column(name = "salary", nullable = false)
     float salary;
 
-    @Column(name = "contact_id", nullable = false)
-    int contactId;
-
-    @Column(name = "view", nullable = false)
+    @Column(name = "views", nullable = false)
     int view;
-
-    @Column(name = "create_id", nullable = false)
-    int createId;
 
     @Column(name = "is_delete", nullable = false)
     boolean isDelete;
+
+    @Column(name = "create_date", nullable = false)
+    Date createDate;
 }
