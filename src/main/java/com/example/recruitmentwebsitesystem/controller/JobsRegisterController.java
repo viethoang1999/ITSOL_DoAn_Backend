@@ -1,6 +1,6 @@
 package com.example.recruitmentwebsitesystem.controller;
-
-import com.example.recruitmentwebsitesystem.dto.ResponseDTO;
+//
+//import com.example.recruitmentwebsitesystem.dto.ResponseDTO;
 import com.example.recruitmentwebsitesystem.entity.JobsRegister;
 import com.example.recruitmentwebsitesystem.generic.BaseService;
 import com.example.recruitmentwebsitesystem.generic.impl.GenericController;
@@ -24,13 +24,13 @@ public class JobsRegisterController extends GenericController<JobsRegister, Inte
         this.jobRegisterService = jobRegisterService;
     }
 
-    @GetMapping("/getAll")
-    public ResponseEntity<ResponseDTO<List<JobsRegister>>> getAll (
-    ) {
-        ResponseDTO responseDTO = new ResponseDTO();
-        responseDTO.setData(jobRegisterService.getAllJobsRegister());
-        return new ResponseEntity<ResponseDTO<List<JobsRegister>>>(responseDTO, HttpStatus.OK);
-    }
+//    @GetMapping("/getAll")
+//    public ResponseEntity<ResponseDTO<List<JobsRegister>>> getAll (
+//    ) {
+//        ResponseDTO responseDTO = new ResponseDTO();
+//        responseDTO.setData(jobRegisterService.getAllJobsRegister());
+//        return new ResponseEntity<ResponseDTO<List<JobsRegister>>>(responseDTO, HttpStatus.OK);
+//    }
 
 }
 

@@ -1,5 +1,7 @@
+
 package com.example.recruitmentwebsitesystem.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,6 +12,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Data
@@ -25,12 +28,10 @@ public class Users implements Serializable {
     @SequenceGenerator(name = "USERS_SEQ", sequenceName = "USERS_SEQ", allocationSize = 1, initialValue = 1)
     int id;
 
-    @OneToOne(targetEntity = Profiles.class, fetch = FetchType.LAZY)
-    @JoinColumn(name = "profiles_id", nullable = false)
+    @OneToOne(mappedBy = "users", fetch = FetchType.EAGER)
     Profiles profiles;
 
-    @OneToOne(targetEntity = JobsRegister.class, fetch = FetchType.LAZY)
-    @JoinColumn(name = "job_register_id", nullable = false)
+    @OneToOne(mappedBy = "users", fetch = FetchType.EAGER)
     JobsRegister jobsRegister;
 
     @Column(name = "full_name", nullable = false)
@@ -65,4 +66,25 @@ public class Users implements Serializable {
 
     @Column(name = "is_delete", nullable = false)
     boolean isDelete;
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "permission",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id"))
+    private Set<Role> roles = new HashSet<>();
+
+    public Users(String userName, String passWord,String avatar, String fullName, String email,  String phone_number, String homeTown, String gender, Date birthday,  Integer userStatus, boolean isDelete) {
+
+        this.fullName = fullName;
+        this.email = email;
+        this.userName = userName;
+        this.passWord = passWord;
+        this.phone_number = phone_number;
+        this.homeTown = homeTown;
+        this.gender = gender;
+        this.birthday = birthday;
+        this.avatar = avatar;
+        this.userStatus = userStatus;
+        this.isDelete = isDelete;
+
+    }
 }

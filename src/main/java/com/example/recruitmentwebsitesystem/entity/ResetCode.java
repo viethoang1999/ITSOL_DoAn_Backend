@@ -28,7 +28,7 @@ public class ResetCode implements Serializable {
     @JoinColumn(name = "user_id", nullable = false)
     Users users;
 
-    @Column(name = "code", nullable = false)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @Column(name = "code", nullable = false)
     int code;
 
     @Column(name = "create_date", nullable = false)

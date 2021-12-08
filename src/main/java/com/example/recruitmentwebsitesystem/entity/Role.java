@@ -1,15 +1,15 @@
 package com.example.recruitmentwebsitesystem.entity;
 
 
+
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
-import org.springframework.stereotype.Component;
-
 import javax.persistence.*;
 import java.io.Serializable;
+
 
 @Data
 @AllArgsConstructor
@@ -32,5 +32,9 @@ public class Role implements Serializable {
 
     @Column(name = "is_delete", nullable = false)
     boolean isDelete;
+
+    @Enumerated(EnumType.STRING)
+    @Column(length = 20)
+    private ERole role;
 
 }
