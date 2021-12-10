@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51921aee-6c03-4766-a667-84076896272d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/DesiredWork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/controller/ResetCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/controller/ResetCodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Jobs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Jobs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/MethodWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/MethodWork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Profiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Profiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/ResetCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/OTP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/repo/ResetCodeRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/repo/ResetCodeRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/ResetCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/ResetCodeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/impl/ResetCodeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/impl/ResetCodeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="51921aee-6c03-4766-a667-84076896272d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,17 +41,6 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RecruitmentWebsiteSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="RecruitmentWebsiteSystem" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.recruitmentwebsitesystem.RecruitmentWebsiteSystemApplication" />
@@ -91,6 +68,7 @@
       <workItem from="1639104643616" duration="7199000" />
       <workItem from="1639118216337" duration="6755000" />
       <workItem from="1639149012171" duration="3908000" />
+      <workItem from="1639153983311" duration="11000" />
     </task>
     <servers />
   </component>
