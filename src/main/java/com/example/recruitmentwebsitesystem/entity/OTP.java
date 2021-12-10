@@ -16,12 +16,12 @@ import java.util.Date;
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Entity
-@Table(name = "reset_code")
-public class ResetCode implements Serializable {
+@Table(name = "OTP")
+public class OTP implements Serializable {
     @Id
     @Column(nullable = false)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "RESET_CODE_SEQ")
-    @SequenceGenerator(name = "RESET_CODE_SEQ", sequenceName = "RESET_CODE_SEQ", allocationSize = 1, initialValue = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "OTP_SEQ")
+    @SequenceGenerator(name = "OTP_SEQ", sequenceName = "OTP_SEQ", allocationSize = 1, initialValue = 1)
     int id;
 
     @ManyToOne(targetEntity = Users.class, fetch = FetchType.LAZY)

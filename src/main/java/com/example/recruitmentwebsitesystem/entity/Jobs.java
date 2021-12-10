@@ -73,7 +73,7 @@ public class Jobs implements Serializable {
     int contactId;
 
     @Column(name = "views", nullable = false)
-    int view;
+    int views;
 
     @Column(name = "create_id", nullable = false)
     int createId;

@@ -5,48 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51921aee-6c03-4766-a667-84076896272d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stephenc_jcip_jcip_annotations_1_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_nimbusds_content_type_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_nimbusds_lang_tag_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_nimbusds_nimbus_jose_jwt_9_10_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_nimbusds_oauth2_oidc_sdk_9_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_oauth2_client_5_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_oauth2_core_5_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecruitmentWebsiteSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RecruitmentWebsiteSystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/controller/JobsRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/controller/JobsRegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/dto/ResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/dto/ResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/DesiredWork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/controller/ResetCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/controller/ResetCodeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Jobs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Jobs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/JobsRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/JobsRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/generic/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/generic/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/generic/impl/GenericController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/generic/impl/GenericController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/repo/JobRegisterRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/repo/JobRegisterRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/impl/JobRegisterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/impl/JobRegisterImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/MethodWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/MethodWork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Profiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Profiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/ResetCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/OTP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/repo/ResetCodeRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/repo/ResetCodeRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/ResetCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/ResetCodeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/impl/ResetCodeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/impl/ResetCodeImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/JobsRegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/JobsRegisterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/dto/ResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/dto/ResponseDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/AcademicLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/AcademicLevel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Company.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Jobs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Jobs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/JobsRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/JobsRegister.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/LevelRank.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/LevelRank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Notifications.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Notifications.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/generic/impl/GenericController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/generic/impl/GenericController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/JobRegisterRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/JobRegisterRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/JobRegisterImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/JobRegisterImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,15 +53,13 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -122,7 +89,8 @@
       <workItem from="1639057124318" duration="2180000" />
       <workItem from="1639061433498" duration="3384000" />
       <workItem from="1639104643616" duration="7199000" />
-      <workItem from="1639118216337" duration="6543000" />
+      <workItem from="1639118216337" duration="6755000" />
+      <workItem from="1639149012171" duration="3908000" />
     </task>
     <servers />
   </component>

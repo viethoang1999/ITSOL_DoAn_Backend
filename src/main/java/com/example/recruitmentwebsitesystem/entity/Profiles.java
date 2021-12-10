@@ -22,11 +22,15 @@ public class Profiles implements Serializable {
     @SequenceGenerator(name = "PROFILES_SEQ", sequenceName = "PROFILES_SEQ", allocationSize = 1, initialValue = 1)
     int id;
 
-    @OneToOne(targetEntity = Users.class, fetch = FetchType.LAZY)
+    @OneToOne(targetEntity = DesiredWork.class)
+    @JoinColumn(name = "desired_work_id", nullable = false)
+    DesiredWork desiredWork;
+
+    @OneToOne(targetEntity = Users.class, fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id", nullable = false)
     Users users;
 
-    @OneToOne(targetEntity = AcademicLevel.class, fetch = FetchType.LAZY)
+    @OneToOne(targetEntity = AcademicLevel.class, fetch = FetchType.EAGER)
     @JoinColumn(name = "academic_level_id", nullable = false)
     AcademicLevel academicLevel;
 
