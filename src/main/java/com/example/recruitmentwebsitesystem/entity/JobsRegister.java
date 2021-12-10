@@ -28,6 +28,9 @@ public class JobsRegister implements Serializable {
     @JoinColumn(name = "user_id", nullable = false)
     int user_id;
 
+    @Column(name = "job_id", nullable = false)
+    int job_id;
+
     @ManyToOne(targetEntity = ProfileStatus.class, fetch = FetchType.LAZY)
     @JoinColumn(name = "profile_status_id", nullable = false)
     ProfileStatus profileStatus;
@@ -46,4 +49,7 @@ public class JobsRegister implements Serializable {
 
     @Column(name = "is_delete", nullable = false)
     boolean isDelete;
+
+//    @ManyToOne(targetEntity = Users.class, fetch = FetchType.LAZY)
+
 }

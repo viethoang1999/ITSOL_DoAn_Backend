@@ -1,6 +1,8 @@
 package com.example.recruitmentwebsitesystem.generic;
 
 import java.util.List;
+
+import com.example.recruitmentwebsitesystem.entity.Jobs;
 import org.springframework.data.domain.Page;
 
 public interface BaseService<T,ID> {
@@ -19,4 +21,12 @@ public interface BaseService<T,ID> {
 //    boolean existsById(ID key);
 
     Long count();
+
+//    public List<Jobs> getListNewJobs(Integer numberDate, Integer page,Integer size);
+//    public List<Jobs> getListJobSalary(Integer numberDate, Integer page,Integer size);
+//    public List<Jobs> getListJobDeadline(Integer numberDate, Integer page,Integer size);
+//    public List<Jobs> getAllJobs();
+//    public Jobs getJob(int id);
+//    public List<Jobs> getTimeJobs();
+//    public  List<Jobs> getSalaryJobs();
 }

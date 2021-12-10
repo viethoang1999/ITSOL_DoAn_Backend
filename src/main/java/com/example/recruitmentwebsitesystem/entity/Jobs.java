@@ -81,8 +81,8 @@ public class Jobs implements Serializable {
     @Column(name = "interrest", nullable = false)
     String interest;
 
-    @Column(name = "salary", nullable = false)
-    float salary;
+    @Column(name = "min_salary", nullable = false)
+    float minSalary;
 
     @Column(name = "views", nullable = false)
     int view;
@@ -92,4 +92,8 @@ public class Jobs implements Serializable {
 
     @Column(name = "create_date", nullable = false)
     Date createDate;
+
+    @Column(name = "max_salary", nullable = false)
+    float maxSalary;
+
 }

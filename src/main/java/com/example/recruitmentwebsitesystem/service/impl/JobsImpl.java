@@ -5,6 +5,9 @@ import com.example.recruitmentwebsitesystem.generic.impl.GenericServiceImpl;
 import com.example.recruitmentwebsitesystem.repo.JobsRepo;
 import com.example.recruitmentwebsitesystem.service.JobsService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
@@ -36,6 +39,22 @@ public class JobsImpl extends GenericServiceImpl<Jobs, Integer> implements JobsS
     }
     public  List<Jobs> getSalaryJobs(){
         return  jobsRepo.getSalaryJob();
+    }
+
+    public List<Jobs> getListNewJobs(Integer page,Integer size){
+        Pageable pageable=PageRequest.of(page,size);
+        return jobsRepo.getListNewJob(pageable);
+
+    }
+    public List<Jobs> getListJobSalary(Integer page,Integer size){
+        Pageable pageable=PageRequest.of(page,size);
+        return jobsRepo.getListJobSalary(pageable);
+
+    }
+    public List<Jobs> getListJobDeadline(Integer numberDate, Integer page,Integer size){
+        Pageable pageable=PageRequest.of(page,size);
+        return jobsRepo.getListJobDeadline(numberDate,pageable);
+
     }
 
 
