@@ -10,30 +10,46 @@ import org.springframework.stereotype.Component;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Random;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Entity
 @Table(name = "OTP")
 public class OTP implements Serializable {
+    private final static Long  EXPIRED_TIME = 5 * 60 * 1000L;
+
     @Id
-    @Column(nullable = false)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "OTP_SEQ")
-    @SequenceGenerator(name = "OTP_SEQ", sequenceName = "OTP_SEQ", allocationSize = 1, initialValue = 1)
-    int id;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "GEN_OTP_ID")
+    @SequenceGenerator(name = "GEN_OTP_ID", sequenceName = "SEQ_OTP", allocationSize = 1)
+    private Long id;
+    private String code;
+    private Long issueAt;
+    @OneToOne
+    private Users user;
 
-    @ManyToOne(targetEntity = Users.class, fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id", nullable = false)
-    Users users;
+    public OTP(Users user){
+        this.user = user;
+        Random random = new Random();
+        StringBuilder sb = new StringBuilder();
+        do{
+            sb.append(String.valueOf(random.nextInt(10)));
+        }while (sb.length() < 5);
+        code = sb.toString();
+        issueAt = System.currentTimeMillis();
+    }
 
-    @Column(name = "code", nullable = false)
-    int code;
+    public OTP(){
+        Random random = new Random();
+        StringBuilder sb = new StringBuilder();
+        do{
+            sb.append(String.valueOf(random.nextInt(10)));
+        }while (sb.length() < 5);
+        this.code = sb.toString();
+        this.issueAt = System.currentTimeMillis();
+    }
 
-    @Column(name = "create_date", nullable = false)
-    Date createDate;
-
-    @Column(name = "is_delete", nullable = false)
-    boolean isDelete;
+    public boolean isExpired(){
+        return this.issueAt + EXPIRED_TIME < System.currentTimeMillis();
+    }
 }

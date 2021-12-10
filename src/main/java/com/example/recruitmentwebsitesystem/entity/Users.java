@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -56,12 +57,13 @@ public class Users implements Serializable {
     @Column(name = "birth_day", nullable = false)
     Date birthday;
 
-    @Column(name = "avatar", nullable = false)
-    String avatar;
-
-    @Column(name = "user_status", nullable = false)
-    Integer userStatus;
 
     @Column(name = "is_delete", nullable = false)
-    boolean isDelete;
+    int isDelete;
+    @ManyToMany(fetch = FetchType.EAGER)
+    private Set<Role> roles = new HashSet<>();
+
+    @Column(name = "IS_ACTIVE")
+    @Type(type = "org.hibernate.type.NumericBooleanType")
+    private boolean isActive;
 }
