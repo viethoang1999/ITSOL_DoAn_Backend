@@ -9,4 +9,5 @@ import java.util.List;
 @Repository
 public interface JobRegisterRepo extends JpaRepository<JobsRegister, Integer> {
     List<JobsRegister> findAll();
+    JobsRegister findById(int id);
 }
