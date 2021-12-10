@@ -1,5 +1,6 @@
 package com.example.recruitmentwebsitesystem.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -25,11 +26,11 @@ public class Users implements Serializable {
     @SequenceGenerator(name = "USERS_SEQ", sequenceName = "USERS_SEQ", allocationSize = 1, initialValue = 1)
     int id;
 
-    @OneToOne(mappedBy = "users", fetch = FetchType.EAGER)
-    Profiles profiles;
-
-    @OneToOne(mappedBy = "users", fetch = FetchType.EAGER)
-    JobsRegister jobsRegister;
+//    @OneToOne(mappedBy = "users", fetch = FetchType.EAGER)
+//    Profiles profiles;
+//
+//    @OneToOne(mappedBy = "users", fetch = FetchType.EAGER)
+//    JobsRegister jobsRegister;
 
     @Column(name = "full_name", nullable = false)
     String fullName;

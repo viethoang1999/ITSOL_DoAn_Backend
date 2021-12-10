@@ -63,7 +63,7 @@ public class Jobs implements Serializable {
     @Column(name = "description", nullable = false)
     String description;
 
-    @Column(name = "interest", nullable = false)
+    @Column(name = "interrest", nullable = false)
     String interest;
 
     @Column(name = "salary", nullable = false)
@@ -72,7 +72,7 @@ public class Jobs implements Serializable {
     @Column(name = "contact_id", nullable = false)
     int contactId;
 
-    @Column(name = "view", nullable = false)
+    @Column(name = "views", nullable = false)
     int view;
 
     @Column(name = "create_id", nullable = false)

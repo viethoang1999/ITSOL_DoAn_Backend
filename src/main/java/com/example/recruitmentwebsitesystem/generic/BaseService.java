@@ -2,6 +2,7 @@ package com.example.recruitmentwebsitesystem.generic;
 
 import java.util.List;
 import org.springframework.data.domain.Page;
+import org.springframework.stereotype.Component;
 
 public interface BaseService<T,ID> {
     List<T> findAll();
@@ -15,8 +16,6 @@ public interface BaseService<T,ID> {
     T update(T obj);
 
     void delete(ID key);
-
-//    boolean existsById(ID key);
 
     Long count();
 }

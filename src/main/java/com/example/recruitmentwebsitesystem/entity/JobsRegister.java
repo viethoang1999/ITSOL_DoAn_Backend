@@ -1,5 +1,7 @@
 package com.example.recruitmentwebsitesystem.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,29 +19,33 @@ import java.util.Date;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Entity
 @Table(name = "jobs_register")
+@Component
 public class JobsRegister implements Serializable {
+
     @Id
     @Column(nullable = false)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "JOBS_REGISTER_SEQ")
     @SequenceGenerator(name = "JOBS_REGISTER_SEQ", sequenceName = "JOBS_REGISTER_SEQ", allocationSize = 1, initialValue = 1)
     int id;
 
-    @OneToOne(targetEntity = Users.class, fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id", nullable = false)
-    Users users;
+//    @OneToOne(targetEntity = Users.class, fetch = FetchType.EAGER)
+    @Column(name = "user_id", nullable = false)
+    int user_id;
 
-    @ManyToOne(targetEntity = ProfileStatus.class, fetch = FetchType.LAZY)
-    @JoinColumn(name = "profile_status_id", nullable = false)
-    ProfileStatus profileStatus;
+//    @ManyToOne(targetEntity = ProfileStatus.class, fetch = FetchType.EAGER)
+    @Column(name = "profile_status_id", nullable = false)
+    int profile_status_id;
 
-    @Column(name = "date_register", nullable = false)
-    Date dateRegister;
+    @Column(name = "vacancies", nullable = false)
+    String vacancies;
 
-    @Column(name = "date_interview", nullable = false)
-    Date dateInterview;
+    @Column(name = "application_time", nullable = false)
+    @Temporal(TemporalType.DATE)
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
+    Date application_time;
 
-    @Column(name = "method_interview", nullable = false)
-    String methodInterview;
+    @Column(name = "status", nullable = false)
+    String status;
 
     @Column(name = "cv_file", nullable = false)
     String cvFile;

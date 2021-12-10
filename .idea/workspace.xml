@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="51921aee-6c03-4766-a667-84076896272d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stephenc_jcip_jcip_annotations_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_nimbusds_content_type_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_nimbusds_lang_tag_1_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_nimbusds_nimbus_jose_jwt_9_10_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_nimbusds_oauth2_oidc_sdk_9_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_oauth2_client_5_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_oauth2_core_5_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecruitmentWebsiteSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RecruitmentWebsiteSystem.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/controller/JobsRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/controller/JobsRegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/dto/ResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/dto/ResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Jobs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Jobs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/JobsRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/JobsRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/generic/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/generic/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/generic/impl/GenericController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/generic/impl/GenericController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/repo/JobRegisterRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/repo/JobRegisterRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/impl/JobRegisterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/impl/JobRegisterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/JobsRegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/JobsRegisterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/dto/ResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/dto/ResponseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/AcademicLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/AcademicLevel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Company.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Jobs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Jobs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/JobsRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/JobsRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/LevelRank.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/LevelRank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Notifications.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Notifications.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/generic/impl/GenericController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/generic/impl/GenericController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/JobRegisterRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/JobRegisterRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/JobRegisterImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/JobRegisterImpl.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="21znWoqYKgjp4auJxZhvA8Xt7gR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecruitmentWebsiteSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="RecruitmentWebsiteSystem" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.recruitmentwebsitesystem.RecruitmentWebsiteSystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51921aee-6c03-4766-a667-84076896272d" name="Default Changelist" comment="" />
+      <created>1638952846440</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638952846440</updated>
+      <workItem from="1638952885596" duration="2093000" />
+      <workItem from="1638966072570" duration="49000" />
+      <workItem from="1639018454074" duration="820000" />
+      <workItem from="1639019678482" duration="4508000" />
+      <workItem from="1639025931922" duration="1794000" />
+      <workItem from="1639040134223" duration="404000" />
+      <workItem from="1639057124318" duration="2180000" />
+      <workItem from="1639061433498" duration="3384000" />
+      <workItem from="1639104643616" duration="7199000" />
+      <workItem from="1639118216337" duration="6543000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

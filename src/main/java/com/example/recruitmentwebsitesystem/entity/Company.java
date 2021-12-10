@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
-import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -33,7 +32,7 @@ public class Company implements Serializable {
     @Column(name = "hot_line", nullable = false)
     String hotLine;
 
-    @Column(name = "date_incorporation", nullable = false)
+    @Column(name = "date_incoporation", nullable = false)
     Date dateIncorporation;
 
     @Column(name = "tax_code", nullable = false)
