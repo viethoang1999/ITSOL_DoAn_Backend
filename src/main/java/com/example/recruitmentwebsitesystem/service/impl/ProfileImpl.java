@@ -15,34 +15,30 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ProfileImpl extends GenericServiceImpl<Profiles, Integer> implements ProfileService {
+public class ProfileImpl  implements ProfileService {
     @Autowired
-    private ProfileRepo profileRepo;
-
-    public ProfileImpl(JpaRepository<Profiles, Integer> jpaRepository) {
-        super(jpaRepository);
-    }
+    private ProfileRepo profileRepository;
 
     @Override
     public List<Profiles> findAll() {
         try {
-            return profileRepo.findAll();
+            return profileRepository.findAll();
         } catch (Exception e) {
             // TODO: handle exception
             e.printStackTrace();
             return null;
         }
-
     }
+
     @Override
     public Profiles save(Profiles profileEntity) {
-        return profileRepo.save(profileEntity);
+        return profileRepository.save(profileEntity);
     }
 
     @Override
     public Profiles findByID(Integer id) {
         try {
-            Optional<Profiles> optional = profileRepo.findById(id);
+            Optional<Profiles> optional = profileRepository.findById(id);
             if(optional.isPresent()) {
                 return optional.get();
             }
@@ -52,6 +48,5 @@ public class ProfileImpl extends GenericServiceImpl<Profiles, Integer> implement
             e.printStackTrace();
             return null;
         }
-
     }
 }

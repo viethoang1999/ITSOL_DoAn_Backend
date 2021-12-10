@@ -6,7 +6,7 @@ import com.example.recruitmentwebsitesystem.generic.BaseService;
 
 import java.util.List;
 
-public interface ProfileService extends BaseService<Profiles, Integer> {
+public interface ProfileService  {
     List<Profiles> findAll();
 
     Profiles save(Profiles profileEntity);

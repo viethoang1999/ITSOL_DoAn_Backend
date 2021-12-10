@@ -8,10 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/academicLevel")
-public class AcademicLevelController extends GenericController<AcademicLevel, Integer> {
+public class AcademicLevelController {
 
-    public AcademicLevelController(BaseService<AcademicLevel, Integer> baseService) {
 
-        super(baseService);
-    }
 }

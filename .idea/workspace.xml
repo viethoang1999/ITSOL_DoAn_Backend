@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="82630f2d-834b-43bd-a428-5b5a14572cd0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/controller/DesireWorkController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/dto/InfomationDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/repo/DesireWorkRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/restcontroller/InformationUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/DesireWorkService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/impl/DesiredWorkServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecruitmentWebsiteSystem.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/controller/AcademicLevelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/controller/AcademicLevelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/controller/CompanyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/controller/ProfilesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/controller/ProfilesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/controller/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/AcademicLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/AcademicLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Desiredwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Desiredwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Profiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Profiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/entity/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/repo/ProfileRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/repo/ProfileRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/AcademicLevelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/AcademicLevelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/ProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/UsersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/impl/AcademicLevelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/impl/AcademicLevelImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/impl/CompanyImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/impl/CompanyImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/impl/ProfileImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/impl/ProfileImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/impl/UsersImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recruitmentwebsitesystem/service/impl/UsersImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/RecruitmentWebsiteSystemApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/RecruitmentWebsiteSystemApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/config/ModelMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/config/ModelMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/config/ObjectMapperConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/config/ObjectMapperConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/AcademicLevelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/AcademicLevelController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/CompanyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/CompanyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/JobStatusController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/JobStatusController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/JobsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/JobsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/JobsRegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/JobsRegisterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/LevelRankController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/LevelRankController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/MethodWorkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/MethodWorkController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/NotificationsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/NotificationsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/PermissionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/PermissionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/ProfileStatusController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/ProfileStatusController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/ProfilesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/ProfilesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/ResetCodeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/ResetCodeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/RoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/RoleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/TypesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/TypesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/controller/UsersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/dto/ErrorMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/dto/ErrorMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/dto/FormUpdateInformation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/dto/FormUpdateInformation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/dto/InformationUserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/dto/InformationUserDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/dto/Metadata.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/dto/Metadata.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/dto/ResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/dto/ResponseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/dto/copanyDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/dto/copanyDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/AcademicLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/AcademicLevel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/AuthProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/AuthProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Company.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Desiredwork.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Desiredwork.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/ERole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/ERole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/JobStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/JobStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Jobs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Jobs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/JobsRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/JobsRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/LevelRank.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/LevelRank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/MethodWork.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/MethodWork.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Notifications.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Notifications.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Permission.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Permission.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/ProfileStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/ProfileStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Profiles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Profiles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/ResetCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/ResetCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Types.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Types.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/entity/Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/generic/BaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/generic/BaseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/generic/impl/GenericController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/generic/impl/GenericController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/generic/impl/GenericResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/generic/impl/GenericResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/generic/impl/GenericServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/generic/impl/GenericServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/AcademicLevelRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/AcademicLevelRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/CompanyRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/CompanyRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/JobRegisterRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/JobRegisterRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/JobStatusRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/JobStatusRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/JobsRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/JobsRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/LevelRankRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/LevelRankRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/MethodWorkRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/MethodWorkRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/NotificationsRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/NotificationsRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/PermissionRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/PermissionRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/ProfileRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/ProfileRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/ProfileStatusRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/ProfileStatusRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/ResetCodeRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/ResetCodeRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/RoleRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/RoleRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/TypesRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/TypesRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/UsersRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/repo/UsersRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/restcontroller/InformationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/restcontroller/InformationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/restcontroller/JobsRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/restcontroller/JobsRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/AcademicLevelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/AcademicLevelService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/CompanyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/CompanyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/JobRegisterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/JobRegisterService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/JobStatusService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/JobStatusService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/JobsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/JobsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/LevelRankService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/LevelRankService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/MethodWorkService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/MethodWorkService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/NotificationsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/NotificationsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/PermissionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/PermissionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/ProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/ProfileService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/ProfileStatusService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/ProfileStatusService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/ResetCodeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/ResetCodeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/RoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/TypesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/TypesService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/UsersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/UsersService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/AcademicLevelImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/AcademicLevelImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/CompanyImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/CompanyImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/CovertDateServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/CovertDateServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/InformationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/InformationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/JobRegisterImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/JobRegisterImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/JobStatusImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/JobStatusImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/JobsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/JobsImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/LevelRankImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/LevelRankImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/MethodWorkImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/MethodWorkImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/NotificationsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/NotificationsImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/PermissionImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/PermissionImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/ProfileImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/ProfileImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/ProfileStatusImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/ProfileStatusImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/ResetCodeImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/ResetCodeImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/RoleImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/RoleImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/TypesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/TypesImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/UsersImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/recruitmentwebsitesystem/service/impl/UsersImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/recruitmentwebsitesystem/RecruitmentWebsiteSystemApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/recruitmentwebsitesystem/RecruitmentWebsiteSystemApplicationTests.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/information" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Palette" value="true" />
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Palette" value="true" />
+        <entry key="JPA Structure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="21aels472IjuI3ZucYodctu6Npu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="RecruitmentWebsiteSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="RecruitmentWebsiteSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.recruitmentwebsitesystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.recruitmentwebsitesystem.RecruitmentWebsiteSystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.RecruitmentWebsiteSystemApplication" />
+        <item itemvalue="Spring Boot.RecruitmentWebsiteSystemApplication" />
+        <item itemvalue="Spring Boot.RecruitmentWebsiteSystemApplication" />
+        <item itemvalue="Spring Boot.RecruitmentWebsiteSystemApplication" />
+        <item itemvalue="Spring Boot.RecruitmentWebsiteSystemApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82630f2d-834b-43bd-a428-5b5a14572cd0" name="Changes" comment="" />
+      <created>1638183781206</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638183781206</updated>
+      <workItem from="1638183790209" duration="214000" />
+      <workItem from="1638195736266" duration="3031000" />
+      <workItem from="1638238049917" duration="5364000" />
+      <workItem from="1638254510835" duration="4898000" />
+      <workItem from="1638260735734" duration="166000" />
+      <workItem from="1638265316210" duration="103000" />
+      <workItem from="1638325479486" duration="3456000" />
+      <workItem from="1638782589994" duration="2924000" />
+      <workItem from="1638843441519" duration="19671000" />
+      <workItem from="1638931192735" duration="471000" />
+      <workItem from="1638933053583" duration="730000" />
+      <workItem from="1638933856226" duration="653000" />
+      <workItem from="1638949546335" duration="2533000" />
+      <workItem from="1638957378219" duration="2353000" />
+      <workItem from="1639038064152" duration="3072000" />
+      <workItem from="1639050267136" duration="603000" />
+      <workItem from="1639057033157" duration="1762000" />
+      <workItem from="1639103344534" duration="2370000" />
+      <workItem from="1639119420144" duration="10447000" />
+      <workItem from="1639143566318" duration="2326000" />
+      <workItem from="1639147380448" duration="4658000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

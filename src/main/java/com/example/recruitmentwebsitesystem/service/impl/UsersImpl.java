@@ -13,14 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class UsersImpl extends GenericServiceImpl<Users, Integer> implements UsersService {
-
-    public UsersImpl(JpaRepository<Users, Integer> jpaRepository) {
-        super(jpaRepository);
-    }
-
-    @Autowired
-    UsersRepo userRepo;
+public class UsersImpl implements UsersService {
     @Autowired
     private UsersRepo userRepository;
     @Override
@@ -55,6 +48,8 @@ public class UsersImpl extends GenericServiceImpl<Users, Integer> implements Use
         }
 
     }
+}
+
 
 //    @Override
 //    public Users findUserByEmail(String email) {
@@ -80,4 +75,4 @@ public class UsersImpl extends GenericServiceImpl<Users, Integer> implements Use
 //    public boolean existByEmail(String email) {
 //        return userRepo.existsByEmail(email);
 //    }
-}
+

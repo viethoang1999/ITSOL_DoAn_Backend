@@ -13,22 +13,22 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class CompanyImpl extends GenericServiceImpl<Company, Integer> implements CompanyService {
+public class CompanyImpl  {
     @Autowired
     private CompanyRepo companyRepo;
 
-    public CompanyImpl(JpaRepository<Company, Integer> jpaRepository) {
-        super(jpaRepository);
-    }
+//    public CompanyImpl(JpaRepository<Company, Integer> jpaRepository) {
+//        super(jpaRepository);
+//    }
 
 
-    @Override
+//    @Override
     public List<Company> getListAll() {
 
             return companyRepo.findAll();
     }
 
-    @Override
+//    @Override
     public Company findByID(Integer id) {
         try {
             Optional<Company> optional = companyRepo.findById(id);
@@ -42,7 +42,7 @@ public class CompanyImpl extends GenericServiceImpl<Company, Integer> implements
         }
     }
 
-    @Override
+//    @Override
     public Company save(Company companyEntity) {
         try {
             return companyRepo.save(companyEntity);

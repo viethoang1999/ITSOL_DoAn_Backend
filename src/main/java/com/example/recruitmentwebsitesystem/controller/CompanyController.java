@@ -17,14 +17,14 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/company")
-public class CompanyController extends GenericController<Company, Integer> {
+public class CompanyController  {
     @Autowired
     private CompanyImpl companyService;
-    public CompanyController(BaseService<Company, Integer> baseService) {
-
-        super(baseService);
-    }
-
+//    public CompanyController(BaseService<Company, Integer> baseService) {
+//
+//        super(baseService);
+//    }
+    @CrossOrigin
     @GetMapping("/all")
     public List<Company> getCompany()
     {
@@ -53,6 +53,12 @@ public class CompanyController extends GenericController<Company, Integer> {
             }
             if(newCompanyEntity.getTaxPlace()==null || newCompanyEntity.getTaxPlace().equals("")) {
                 throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Vui lòng nhập nơi cấp mã số thuế");
+            }
+            if(newCompanyEntity.getHeadOffice()==null || newCompanyEntity.getHeadOffice().equals("")) {
+                throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Vui lòng nhập trụ sở chính");
+            }
+            if(newCompanyEntity.getLinkWeb()==null || newCompanyEntity.getLinkWeb().equals("")) {
+                throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Vui lòng nhập  trang web công ty");
             }
 
             Company companyEntity = new Company();
@@ -104,6 +110,12 @@ public class CompanyController extends GenericController<Company, Integer> {
             }
             if(newCompanyEntity.getTaxPlace()==null || newCompanyEntity.getTaxPlace().equals("")) {
                 throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Vui lòng nhập nơi cấp mã số thuế");
+            }
+            if(newCompanyEntity.getHeadOffice()==null || newCompanyEntity.getHeadOffice().equals("")) {
+                throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Vui lòng nhập trụ sở chính");
+            }
+            if(newCompanyEntity.getLinkWeb()==null || newCompanyEntity.getLinkWeb().equals("")) {
+                throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Vui lòng nhập  trang web công ty");
             }
 
             companyEntity.setName(newCompanyEntity.getName().trim());

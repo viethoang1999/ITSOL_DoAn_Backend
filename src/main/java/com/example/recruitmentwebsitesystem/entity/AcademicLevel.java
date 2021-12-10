@@ -1,9 +1,6 @@
 package com.example.recruitmentwebsitesystem.entity;
 
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
@@ -12,21 +9,23 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Setter
+@Getter
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Entity
 @Table(name = "academic_level")
 public class AcademicLevel implements Serializable {
     @Id
-    @Column(nullable = false)
+    @Column(name = "id",nullable = false)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ACADEMIC_LEVEL_SEQ")
     @SequenceGenerator(name = "ACADEMIC_LEVEL_SEQ", sequenceName = "ACADEMIC_LEVEL_SEQ", allocationSize = 1, initialValue = 1)
-    int id;
+    Integer id;
 
-    @OneToOne(mappedBy = "academicLevel", fetch = FetchType.EAGER)
-    Jobs jobs;
-
-    @OneToOne(mappedBy = "academicLevel", fetch = FetchType.EAGER)
-    Profiles profiles;
+//    @OneToOne(mappedBy = "academicLevel", fetch = FetchType.EAGER)
+//    Jobs jobs;
+//
+//    @OneToOne(mappedBy = "academicLevel", fetch = FetchType.EAGER)
+//    Profiles profiles;
 
     @Column(name = "academic_name", nullable = false)
     String academicName;

@@ -1,8 +1,19 @@
 package com.example.recruitmentwebsitesystem.entity;
 
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.FieldDefaults;
+
 import javax.persistence.*;
 import java.io.Serializable;
-
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE)
+@Entity
+@Table(name = "desiredwork")
 public class Desiredwork implements Serializable {
     @Id
     @Column(nullable = false)
@@ -13,7 +24,7 @@ public class Desiredwork implements Serializable {
     Profiles profiles;
 
     @Column(name = "desiredworkname", nullable = false)
-    String methodName;
+    String desiredworkname;
 
     @Column(name = "description", nullable = false)
     String description;
