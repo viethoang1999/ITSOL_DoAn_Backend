@@ -99,6 +99,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:5.3.12" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.8.3" level="project" />
     <orderEntry type="library" name="Maven: io.jsonwebtoken:jjwt:0.9.1" level="project" />
+    <orderEntry type="library" name="Maven: com.auth0:java-jwt:3.18.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.security:spring-security-test:5.5.3" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:5.5.3" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-crypto:5.5.3" level="project" />
@@ -140,7 +141,6 @@
     <orderEntry type="library" name="Maven: org.glassfish.jaxb:jaxb-runtime:2.3.5" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.jaxb:txw2:2.3.5" level="project" />
     <orderEntry type="library" name="Maven: com.sun.istack:istack-commons-runtime:3.0.12" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: com.sun.activation:jakarta.activation:1.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jpa:2.5.6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-orm:5.3.12" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aspects:5.3.12" level="project" />
@@ -159,5 +159,9 @@
     <orderEntry type="library" name="Maven: com.nimbusds:content-type:2.1" level="project" />
     <orderEntry type="library" name="Maven: com.nimbusds:lang-tag:1.5" level="project" />
     <orderEntry type="library" name="Maven: com.nimbusds:nimbus-jose-jwt:9.10.1" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-mail:2.5.6" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context-support:5.3.12" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.mail:jakarta.mail:1.6.7" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.activation:jakarta.activation:1.2.2" level="project" />
   </component>
 </module>

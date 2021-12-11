@@ -30,7 +30,7 @@ public class Role implements Serializable {
     @Column(name = "description", nullable = false)
     String description;
 
-    @Column(name = "is_delete", nullable = false)
-    boolean isDelete;
+    @Column(name = "name")
+    private String name;
 
 }

@@ -20,7 +20,7 @@ public class Profiles implements Serializable {
     @Column(nullable = false)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PROFILES_SEQ")
     @SequenceGenerator(name = "PROFILES_SEQ", sequenceName = "PROFILES_SEQ", allocationSize = 1, initialValue = 1)
-    int id;
+    Integer id;
 
     @OneToOne(targetEntity = Users.class, fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
@@ -30,14 +30,18 @@ public class Profiles implements Serializable {
     @JoinColumn(name = "academic_level_id", nullable = false)
     AcademicLevel academicLevel;
 
+    @OneToOne(targetEntity = Desiredwork.class, fetch = FetchType.LAZY)
+    @JoinColumn(name = "desire_id", nullable = false)
+    Desiredwork desiredwork;
+
     @Column(name = "skill", nullable = false)
     String skill;
 
     @Column(name = "number_years_experience", nullable = false)
-    int numberYearsExperience;
+    Integer numberYearsExperience;
 
     @Column(name = "desired_salary", nullable = false)
-    int desiredSalary;
+    String desiredSalary;
 
     @Column(name = "desired_working_address", nullable = false)
     String desiredWorkingAddress;

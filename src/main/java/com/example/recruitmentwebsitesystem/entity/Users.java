@@ -1,5 +1,6 @@
 package com.example.recruitmentwebsitesystem.entity;
 
+import com.example.recruitmentwebsitesystem.service.impl.UserServiceimpl;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -65,4 +66,5 @@ public class Users implements Serializable {
 
     @Column(name = "is_delete", nullable = false)
     boolean isDelete;
+
 }
